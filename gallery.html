@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Group Gallery</title>
+    <style>
+      /* Mobile Responsive */
+@media(max-width:600px){
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+    nav{
+        padding:10px;
+    }
+    nav a{
+        display:block;
+        margin:10px 0;
+        font-size:16px;
+    }
+    h1{
+        font-size:28px;
+    }
+    h2{
+        font-size:20px;
+    }
+    p{
+        font-size:16px;
+    }
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    .hero{
+        padding:30px 15px;
+    }
+    .hero h1{
+        font-size:30px;
+    }
+    .btn{
+        display:block;
+        margin:10px auto;
+        width:80%;
+    }
+    .services{
+        flex-direction:column;
+        align-items:center;
+        padding:15px;
+    }
+    .card, .box{
+        width:90%;
+    }
+    .contact{
+        width:90%;
+        margin:20px auto;
+        padding:20px;
+    }
+    form input,
+    form textarea{
+        width:100%;
+        box-sizing:border-box;
+    }
+    footer{
+        font-size:14px;
+    }
+}
+        body{
+            font-family: Arial, sans-serif;
+            background: lightblue;
+            margin:0; }
+        h1{
+            text-align:center; }
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:20px; }
+        .photo{
+            background:white;
+            padding:10px;
+            border:2px solid black;
+            width:300px;
+            text-align:center; }
+        .photo img{
+            width:100%;
+            border-radius:8px; }
+  .photo{
+    transition:0.3s; }
+.photo:hover{
+    transform:scale(1.05); }
+nav{
+    background-color: darkblue;
+    padding: 15px;
+    text-align: center; }
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold; }
+nav a:hover{color: yellow; }
+      .logo{
+    text-align:center;
+    background:white;
+    padding:10px;}
+.logo img{
+    width:120px;}
+    </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.png" alt="RAM-Group Painting LTD Logo">
+</div>
+ <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<h1>Our Gallery</h1>
+  <p style="text-align:center;">
+Explore some of our recent painting and finishing projects.
+</p>
+<div class="gallery">
+    <div class="photo">
+        <img src="inzu4.jpg" alt="Interior Painting">
+        <p>Interior Painting</p>
+    </div>
+    <div class="photo">
+        <img src="inzu3.jpg" alt="Exterior Painting">
+        <p>Exterior Painting</p>
+    </div>
+    <div class="photo">
+        <img src="inzu2.jpg" alt="Board Ceiling">
+        <p>Board Ceiling Design</p>
+    </div>
+</div>
+</body>
+</html>
