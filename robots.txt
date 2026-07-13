@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rameck555-coder.github.io/RAM-Group-LTD-Website/sitemap.xml
