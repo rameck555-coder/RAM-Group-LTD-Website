@@ -176,35 +176,46 @@ nav a:hover{color: yellow; }
     <a href="https://wa.me/message/KHMU7GHZ2UEHN1">Contact us on whatsapp</a>
   <a href="service.html">Our services</a>
     <a href="tel:+250786513262">call us:+250 786 513 262</a>
-     <form>
-      <label>Full Name:</label><br><input type="text" name="fullname"required><br><br>
-      <label>Email:</label><br><input type="email" name="email"required><br><br>
-      <label>Phone Number:</label><br><input type="tel" name="phone"required><br><br>
-      <label>Select Service:</label><br><select name="Service">
-        <option>Exterior Painting</option>
-        <option>Interior Painting</option>
-        <option>Board Ceiling Design</option>
-        <option>House Painting Maintenance</option>
-      </select><br><br>
-      <label>Message</label><br><textarea name="message" rows="5" cols="40"required></textarea><br><br>
-       <label>Select Date</label><br>
+     <form action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden" name="access_key" value="f7aeb226-4261-442f-b331-501cce7c6f0f">
+
+<label>Full Name:</label><br>
+<input type="text" name="fullname" required><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Phone Number:</label><br>
+<input type="tel" name="phone" required><br><br>
+
+<label>Select Service:</label><br>
+<select name="service">
+  <option>Exterior Painting</option>
+  <option>Interior Painting</option>
+  <option>Board Ceiling Design</option>
+  <option>House Painting Maintenance</option>
+</select><br><br>
+
+<label>Message</label><br>
+<textarea name="message" rows="5" cols="40" required></textarea><br><br>
+
+<label>Select Date</label><br>
 <input type="date" name="date"><br><br>
-       <label>Payment Method</label><br>
 
+<label>Payment Method</label><br>
 <input type="radio" name="payment" value="Cash"> Cash<br>
-
 <input type="radio" name="payment" value="Mobile Money"> Mobile Money<br>
+<input type="radio" name="payment" value="Bank Transfer"> Bank Transfer<br><br>
 
-<input type="radio" name="payment" value="Bank"> Bank Transfer<br><br>
-       <label>Additional Services</label><br>
+<label>Additional Services</label><br>
+<input type="checkbox" name="extras[]" value="Wall Repair"> Wall Repair<br>
+<input type="checkbox" name="extras[]" value="Decoration"> Decoration<br>
+<input type="checkbox" name="extras[]" value="Cleaning"> Cleaning<br><br>
 
-<input type="checkbox" name="extras" value="Wall Repair"> Wall Repair<br>
+<input type="submit" value="Send Message">
 
-<input type="checkbox" name="extras" value="Decoration"> Decoration<br>
-
-<input type="checkbox" name="extras" value="Cleaning"> Cleaning<br><br>
-      <input type="submit" value="send">
-  </form>
+</form>
     <div class="services">
   <div class="box">
     <h2>Interior Painting</h2>
